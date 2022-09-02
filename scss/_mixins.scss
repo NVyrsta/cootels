@@ -1,0 +1,29 @@
+@use 'variables' as *;
+@mixin flex-center($flex-direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $flex-direction;
+  text-align: center;
+}
+@mixin flex-space-between($flex-direction) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: $flex-direction;
+  text-align: left;
+}
+@mixin text-typography {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.5;
+  color: $text-color;
+}
+@mixin title-typography {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 2em;
+  line-height: 1.5;
+  color: $title-color;
+}

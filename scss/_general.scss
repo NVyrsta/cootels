@@ -1,0 +1,59 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+// ----reset styles------
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  // font-family: 'Inter', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+// ----reusable styles----
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 90vw;
+  background: pink;
+}
+.img-container {
+  max-width: 100%;
+}
+.img-container img {
+  width: 100%;
+}
+.btn {
+  @include flex-center(column);
+  padding: 1em 2em;
+  background: $btn-bg-color;
+  border-radius: 4px;
+  color: white;
+}
+@media screen and (min-width: 800px) {
+  .container {
+    width: 80vw;
+  }
+  .article__content {
+    padding-right: 6em;
+  }
+
+  .img-left {
+    order: 1;
+  }
+  .article-right {
+    order: 2;
+    padding-right: 0;
+
+    padding-left: 6em;
+  }
+}
+
+// -----------------------
