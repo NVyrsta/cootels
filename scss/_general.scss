@@ -16,7 +16,11 @@ a {
   color: inherit;
   cursor: pointer;
 }
-
+li {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
 // ----reusable styles----
 .container {
   max-width: 1440px;
