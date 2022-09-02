@@ -22,6 +22,8 @@ li {
 
 .btn {
   cursor: pointer;
+  margin-bottom: 2em;
+  margin-top: 1em;
 }
 
 .btn:active {
@@ -87,6 +89,8 @@ li {
   margin-bottom: 1em;
 }
 .article__btn {
+  max-width: 151px;
+  max-height: 51px;
   display: inline-block;
 }
 .article__title {

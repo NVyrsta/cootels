@@ -11,6 +11,7 @@ body {
   // font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -23,6 +24,8 @@ li {
 }
 .btn {
   cursor: pointer;
+  margin-bottom: 2em;
+  margin-top: 1em;
 }
 .btn:active {
   transform: scale(0.7);
