@@ -13,10 +13,17 @@
     max-width: 386px;
     flex: 1;
   }
-
+  &__content * {
+    margin-bottom: 1em;
+  }
+  &__btn {
+    display: inline-block;
+  }
   // .article__title
 
   &__title {
+    margin-top: 1em;
+
     @include title-typography;
   }
 
@@ -57,7 +64,6 @@
     // .acticle__img
 
     &__img {
-      border: 1px solid green;
       flex: 1;
     }
   }

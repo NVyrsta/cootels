@@ -20,6 +20,15 @@ li {
   color: inherit;
 }
 
+.btn {
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.7);
+  transition: all 1s ease;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -74,7 +83,14 @@ li {
   max-width: 386px;
   flex: 1;
 }
+.article__content * {
+  margin-bottom: 1em;
+}
+.article__btn {
+  display: inline-block;
+}
 .article__title {
+  margin-top: 1em;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 2em;
@@ -115,7 +131,6 @@ li {
     flex: 2;
   }
   .acticle__img {
-    border: 1px solid green;
     flex: 1;
   }
 }
