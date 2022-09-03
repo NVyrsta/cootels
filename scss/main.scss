@@ -3,7 +3,29 @@
 @use 'mixins' as *;
 
 // ----Articles---------
-
+.hero-img img {
+  display: inline-block;
+  width: 30%;
+}
+.down {
+  position: relative;
+  top: 40px;
+}
+.hero-img {
+  @include flex-space-between(row);
+}
+.hero-content {
+  padding-right: 0;
+}
+@media screen and(min-width:800px) {
+  .hero-img {
+    flex: 1;
+  }
+  .hero-content {
+    flex: 1 !important;
+    padding-right: 2em;
+  }
+}
 .article {
   @include flex-center(column);
 

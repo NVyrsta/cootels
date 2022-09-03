@@ -74,6 +74,37 @@ li {
     padding-left: 6em;
   }
 }
+.hero-img img {
+  display: inline-block;
+  width: 30%;
+}
+
+.down {
+  position: relative;
+  top: 40px;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+}
+
+.hero-content {
+  padding-right: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .hero-img {
+    flex: 1;
+  }
+  .hero-content {
+    flex: 1 !important;
+    padding-right: 2em;
+  }
+}
 .article {
   display: flex;
   justify-content: center;
