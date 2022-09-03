@@ -12,13 +12,21 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/f26eae8bb0.js"
+      crossorigin="anonymous"
+    ></script>
     <!--  -->
     <link rel="stylesheet" href="scss/main.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <!-- Navigation -->
+      <section class="container nav"></section>
+    </header>
     <main>
-      <!-- Articles -->
+      <!-- Hero section -->
       <section class="container article">
         <div class="article__content hero-content">
           <h1 class="article__title">
@@ -38,6 +46,7 @@
           <img src="img/hero_img-3-min.png" alt="Cootels" />
         </div>
       </section>
+      <!-- Articles -->
       <section class="container article">
         <div class="article__content article-right">
           <h2 class="article__title">
@@ -141,7 +150,6 @@
               Best for family or group. One cootage can fit up to 5 people. Made
               stronger bond with your family or friends
             </p>
-
             <p class="room__btn">
               <span>Learn more</span>
               <img src="img/arrow-right.png" alt="learn more" />
@@ -149,7 +157,70 @@
           </div>
         </div>
       </section>
-      <!--  -->
+      <!--Slider  -->
+      <section class="container slider">
+        <h2 class="slider__title">Hear From Our Happy Customers</h2>
+        <div class="slider__wrapper">
+          <div class="slider__slids">
+            <div class="slide current-slide">
+              <div class="slide__img img-container">
+                <img src="img/kirana-min.png" alt="Client's photo" />
+              </div>
+              <p class="slide__desc">
+                “Great service, great food, great people. The scenery is also
+                beautiful, you can do so much activity even with your famility.
+                Worth every penny! you should come and see for your self. 5 out
+                of 5! the waffle is great!”
+              </p>
+              <p class="slide__name">Kirana Dunham</p>
+            </div>
+            <div class="slide">
+              <div class="slide__img img-container">
+                <img src="img/testomonials/michael.jpg" alt="Client's photo" />
+              </div>
+              <p class="slide__desc">
+                “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente non at architecto animi delectus accusantium pariatur
+                quis error eum earum.”
+              </p>
+              <p class="slide__name">Michael Miller</p>
+            </div>
+            <div class="slide">
+              <div class="slide__img img-container">
+                <img src="img/testomonials/rebeca.jpg" alt="Client's photo" />
+              </div>
+              <p class="slide__desc">
+                “Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laborum, maxime? Beatae quo hic pariatur placeat.”
+              </p>
+              <p class="slide__name">Rebeca Willson</p>
+            </div>
+            <div class="slide">
+              <div class="slide__img img-container">
+                <img src="img/testomonials/alison.jpg" alt="Client's photo" />
+              </div>
+              <p class="slide__desc">
+                “Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                dignissimos, labore porro deleniti dolores quisquam! Quos itaque
+                qui exercitationem quidem.”
+              </p>
+              <p class="slide__name">Alison Richards</p>
+            </div>
+            <div class="slider__btn" role="button" id="btn-prev">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="slider__btn" role="button" id="btn-next">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="dots__wrapper">
+          <span class="dot current-dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
     </main>
     <footer>
       <!-- Footer -->
@@ -206,5 +277,6 @@
       />
     </svg> -->
     <!--  -->
+    <script src="js/script.js"></script>
   </body>
 </html>
